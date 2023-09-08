@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Concepts</title>
+</head>
+<body>
+    <h1>JavaScript Concepts</h1>
+
+    <script>
+        // JavaScript String Methods
+        let string1 = "Hello, JavaScript!";
+        let string2 = "   Trim me!   ";
+        
+        let upperCaseString = string1.toUpperCase();
+        let lowerCaseString = string1.toLowerCase();
+        let trimmedString = string2.trim();
+        let stringLength = string1.length;
+        let indexOfJS = string1.indexOf("JavaScript");
+
+        // JavaScript Number Methods
+        let num1 = 42.4567;
+        let num2 = -7;
+        
+        let fixedNum = num1.toFixed(2);
+        let precisionNum = num1.toPrecision(4);
+        let stringNum = num2.toString();
+        let parsedNum = parseInt("123");
+        let parsedFloatNum = parseFloat("3.14");
+
+        // JavaScript Array Methods
+        let fruits = ["Banana", "Orange", "Apple", "Mango"];
+        
+        fruits.push("Kiwi");
+        let poppedFruit = fruits.pop();
+        let joinedFruits = fruits.join(", ");
+        let slicedFruits = fruits.slice(1, 3);
+        let splicedFruits = fruits.splice(1, 2);
+
+        // JavaScript Date Methods
+        let currentDate = new Date();
+        
+        let currentYear = currentDate.getFullYear();
+        let currentMonth = currentDate.getMonth();
+        let currentDay = currentDate.getDate();
+        let currentHour = currentDate.getHours();
+        let currentMinute = currentDate.getMinutes();
+
+        // JavaScript Function Methods
+        function greet(name) {
+            return "Hello, " + name + "!";
+        }
+
+        let greetFunctionString = greet.toString();
+
+        function addNumbers(a, b) {
+            return a + b;
+        }
+
+        let addFunctionString = addNumbers.toString();
+
+    </script>
+</body>
+</html>
